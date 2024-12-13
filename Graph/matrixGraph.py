@@ -23,6 +23,16 @@ class MatrixGraph():
         for vertex in self.matrix:
             print(vertex)
 
+graph = MatrixGraph(4)
+graph.addEdge(0,1)
+graph.addEdge(0,2)
+graph.addEdge(1,0)
+graph.addEdge(1,3)
+graph.addEdge(2,0)
+graph.addEdge(2,3)
+graph.addEdge(3,1)
+graph.addEdge(3,2)
+graph.deisplay()
 
 #     [a][b][c][d]
 #
@@ -39,6 +49,12 @@ class MatrixGraph():
 
 # graph representation 👆
 
+print("----------------------------------------------------")
+
+graph.deleteEdge(1,3)
+graph.deleteEdge(3,1)
+graph.deisplay()
+
 # [0, 1, 1, 0]
 # [1, 0, 0, 0]
 # [1, 0, 0, 1]
@@ -51,19 +67,3 @@ class MatrixGraph():
 # C -- D
 
 # graph representation after deletion 👆
-
-
-graph = MatrixGraph(4)
-graph.addEdge(0,1)
-graph.addEdge(0,2)
-graph.addEdge(1,0)
-graph.addEdge(1,3)
-graph.addEdge(2,0)
-graph.addEdge(2,3)
-graph.addEdge(3,1)
-graph.addEdge(3,2)
-graph.deisplay()
-print("----------------------------------------------------")
-graph.deleteEdge(1,3)
-graph.deleteEdge(3,1)
-graph.deisplay()
