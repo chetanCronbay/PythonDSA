@@ -1,7 +1,8 @@
 class MatrixGraph():
     def __init__(self, size):
         self.size = size # set size of the matrix i.e the number of vertices
-        self.matrix = [[0 for _ in range(size)] for _ in range(size)] # make an empty matrix inner loop is [0 for _ in range(size)] and outer loop is [for _ in range(size)] that giver the output like [0][0][0]
+        self.matrix = [[0 for _ in range(size)] for _ in range(size)] # make an empty matrix inner loop is [0 for _ in range(size)] and outer loop is [for _ in range(size)] that giver the output like 
+                                                               #  [0][0][0]
                                                                #  [0][0][0]
                                                                #  [0][0][0] with size =3
     
