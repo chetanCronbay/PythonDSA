@@ -28,6 +28,7 @@ def dfs(graph, visited, node):
 print("DFS:")
 # Call the DFS function starting from node '5'
 dfs(graph, visited, '5')
+print("end")
 
 # Visual representation of the graph:
 #     5
@@ -36,4 +37,4 @@ dfs(graph, visited, '5')
 #  / \   \
 # 2   4-- 8
 
-# Output:- DFS: 5 -> 3 -> 2 -> 4 -> 8 -> 7 ->
+# Output:- DFS: 5 -> 3 -> 2 -> 4 -> 8 -> 7 -> end

@@ -36,6 +36,7 @@ def bfs(graph, visited, node):
                 visited.append(neighbour)
                 # Add the neighbor to the queue
                 queue.append(neighbour)
+    print("end")
 
 # Print the starting message for BFS
 print("BFS:")
@@ -49,4 +50,4 @@ bfs(graph, visited, '5')
 #  / \   \
 # 2   4---8
 
-# Output: BFS: 5 -> 3 -> 7 -> 2 -> 4 -> 8 ->
+# Output: BFS: 5 -> 3 -> 7 -> 2 -> 4 -> 8 -> end
