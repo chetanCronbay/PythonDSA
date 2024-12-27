@@ -8,16 +8,6 @@ graph = {
   '8' : []
 }
 
-# Visual representation of the graph:
-#     5
-#    / \
-#   3   7
-#  / \   \
-# 2   4-- 8
-
-# it is a directed graph
-
-
 # Initialize an empty list to keep track of visited nodes
 visited = []
 
@@ -38,5 +28,12 @@ def dfs(graph, visited, node):
 print("DFS:")
 # Call the DFS function starting from node '5'
 dfs(graph, visited, '5')
+
+# Visual representation of the graph:
+#     5
+#    / \
+#   3   7
+#  / \   \
+# 2   4-- 8
 
 # Output:- DFS: 5 -> 3 -> 2 -> 4 -> 8 -> 7 ->
