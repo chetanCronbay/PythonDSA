@@ -10,7 +10,7 @@ class LinkedList():
         self.head = None
 
     def addNode(self, data): #adds node at the begning
-        new_node = node(data) #new empty node is made ([][])
+        new_node = node(data) #new node is made ([][])
         new_node.next = self.head #refrence is made ([][head])
         self.head = new_node #head now points to the new_node ([][head]->[new_node][])
 
